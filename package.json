@@ -12,7 +12,7 @@
     }
   },
   "scripts": {
-    "build": "tsc && tsc --module CommonJS --outDir dist/cjs",
+    "build": "tsc",
     "test": "jest"
   },
   "jest": {

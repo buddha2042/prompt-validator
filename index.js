@@ -10,7 +10,7 @@ async function validatePrompt(apiKey, question) {
     throw new Error("Question is required");
   }
 
-  const prompt = `${teacher}, Here is the message ---- ${message}`;
+  const prompt = `${teacher}, Here is the message ---- ${question}`;
   try {
     const response = await promptValidator(apiKey, prompt);
     return response;

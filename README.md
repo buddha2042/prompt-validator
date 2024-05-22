@@ -14,3 +14,35 @@ To install Prompt Validator, simply run:
 
 ```bash
 npm install prompt-validator
+
+ ## Usage
+Sending a Request
+To use Prompt Validator, you'll need your OpenAI API key. Once you have it, you can send a request to validate a prompt as follows:
+
+
+const { promptValidator } = require('prompt-validator');
+
+const apiKey = 'your-openai-api-key';
+const prompt = 'Your prompt text goes here';
+
+promptValidator(apiKey, prompt)
+  .then(response => {
+    console.log('Response:', response);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+If the prompt contains a violation:
+{
+  "validate": "The message contains a high-level violation as it incites violence and harm towards others."
+}
+If the prompt is verified and does not contain a violation:
+{
+  "validate": "verified"
+}
+
+
+ ## Authors
+to report the bug please contact - info@buddhakharel.com
+

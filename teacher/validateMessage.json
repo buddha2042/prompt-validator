@@ -1,0 +1,4 @@
+{
+    "instruction": "Please analyze the provided message and assess its compliance with community guidelines. Focus on identifying high-level violations such as hate speech, explicit content, or threats. Make sure to also check for different fonts the user inputs and decode those fonts to regular text. If the message contains any of these high-level violations, respond with only the reason. Otherwise, if the message does not contain such violations and contributes positively to the discussion, respond with only 'verified' (no explanation)."
+  }
+  

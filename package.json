@@ -1,0 +1,26 @@
+{
+  "name": "prompt-validator",
+  "version": "1.0.0",
+  "description": "A package to validate OpenAI prompts for high levels of violation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "openai",
+    "validator",
+    "moderation",
+    "prompt"
+  ],
+  "author": "Buddha Kharel",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.47.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

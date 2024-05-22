@@ -11,11 +11,17 @@ Prompt Validator is a Node.js package designed to help you validate OpenAI promp
 ## Installation
 
 To install Prompt Validator, simply run:
+npm install prompt-validator
 
 ```bash
 npm install prompt-validator
 
  ## Usage
+ Usage
+CommonJS
+To use Prompt Validator in a CommonJS environment, you can require it like this:
+
+
 Sending a Request
 To use Prompt Validator, you'll need your OpenAI API key. Once you have it, you can send a request to validate a prompt as follows:
 
@@ -32,6 +38,20 @@ promptValidator(apiKey, prompt)
   .catch(error => {
     console.error('Error:', error);
   });
+
+  import { promptValidator } from 'prompt-validator';
+
+const apiKey = 'your-openai-api-key';
+const prompt = 'Your prompt text goes here';
+
+promptValidator(apiKey, prompt)
+  .then(response => {
+    console.log('Response:', response);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
 
 If the prompt contains a violation:
 {

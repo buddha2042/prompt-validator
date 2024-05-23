@@ -14,7 +14,7 @@ export async function validatePrompt(apiKey: string, question: string): Promise<
   try {
     const response = await promptValidator(apiKey, prompt);
     return response;
-  } catch (error: any) {  // casting error to any
+  } catch (error: any) {  
     throw new Error(`Failed to validate prompt: ${error.message}`);
   }
 }

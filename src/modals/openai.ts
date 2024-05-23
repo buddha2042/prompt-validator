@@ -18,7 +18,7 @@ export async function promptValidator(key: string, prompt: string): Promise<stri
 
     const responseText = completion.choices[0].message.content;
     return responseText;
-  } catch (error: any) {  // casting error to any
+  } catch (error: any) { 
     throw new Error(`Error generating text: ${error.message}`);
   }
 }

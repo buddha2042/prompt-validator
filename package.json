@@ -2,17 +2,17 @@
   "name": "prompt-validator",
   "version": "1.0.6",
   "description": "A package to validate OpenAI prompts for high levels of violation",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -r src/teacher dist/", 
     "test": "jest"
   },
   "jest": {

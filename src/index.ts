@@ -1,6 +1,6 @@
 
 import { promptValidator } from './modals/openai';
-const teacher = require('../teacher/validateMessage.json').instruction;
+const teacher = require('./teacher/validateMessage.json').instruction;
 
 export async function validatePrompt(apiKey: string, question: string): Promise<string> {
   if (!apiKey) {

@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-[![npm version](https://img.shields.io/npm/v/prompt-validator.svg)](https://www.npmjs.com/package/promt-validator)
+[![npm version](https://img.shields.io/npm/v/prompt-validator.svg)](https://www.npmjs.com/package/prompt-validator)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## About The Project

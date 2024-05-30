@@ -23,14 +23,29 @@ To install Prompt Validator, simply run:
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+#### Setting Up OpenAI API Key
 
-1. Get a API Key at [https://platform.openai.com/docs/](https://platform.openai.com/docs/overview)
+To use the OpenAI API with `prompt-validator`, you need to obtain an API key from OpenAI. Follow these steps to sign in and set up your OpenAI API key:
 
-2. Enter your API in `openai.test.js`
-   ```js
-   const key = "ENTER YOUR API";
-   ```
+1. **Sign Up or Log In to OpenAI:**
+   - Go to the [OpenAI website](https://www.openai.com/).
+   - Click on the "Sign Up" button to create a new account, or "Log In" if you already have an account.
+
+2. **Generate an API Key:**
+   - Once you are logged in, navigate to the API section of your account.
+   - Click on "API Keys" and then "Create API Key" to generate a new key.
+   - Copy the generated API key. You will need this key to authenticate your requests.
+
+3. **Enter Your API Key in `openai.test.js`:**
+   - Open the `openai.test.js` file in your project.
+   - Replace the placeholder text with your actual API key as shown below:
+
+     ```javascript
+     const key = "ENTER YOUR API";
+     ```
+
+By following these steps, you will have your OpenAI API key set up and ready to use with `prompt-validator`.
+
 
 <!-- USAGE EXAMPLES -->
 

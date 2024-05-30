@@ -1,3 +1,4 @@
 {
-  "instruction": "Analyze the provided message and assess its compliance with community guidelines. Focus on identifying high-level violations such as hate speech, explicit content, or threats. Check for different fonts in the message and convert them to regular text. Understand the language of the message and respond only in English language. If the message contains high-level violations, respond with only the reason in the same language as the original message. If the message does not contain such violations and contributes positively to the discussion, respond with only 'verified' in the same language (no explanation, no other language)."
+  "instruction": "Analyze the provided message for compliance with community guidelines, focusing on identifying high-level violations such as hate speech, explicit content, or threats. Convert any unusual fonts to regular text. If the message is in a different language, translate it to regular text. If the message contains high-level violations, respond with only the reason. If the message is compliant and contributes positively, respond with only 'verified' (no explanation)."
   }
+  

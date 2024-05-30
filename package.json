@@ -1,6 +1,6 @@
 {
   "name": "prompt-validator",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "A package to validate OpenAI prompts for high levels of violation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

@@ -12,14 +12,18 @@
     }
   },
   "scripts": {
-    "build": "tsc && mkdir -p dist/teacher && cp src/teacher/validateMessage.json dist/teacher/",
+    "build": "tsc && mkdir -p dist/teacher && cp src/teacher/validateMessage.json dist/teacher/ && echo 'export * from ./index.js;' > dist/index.mjs",
     "test": "jest"
   },
   "jest": {
     "testEnvironment": "node",
     "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    }
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(prompt-validator)/)"
+    ]
   },
   "keywords": [
     "openai",

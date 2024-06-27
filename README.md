@@ -56,7 +56,7 @@ Once installed, you can use Prompt Validator in your Node.js applications as fol
 1. ES Modules
 
    ```sh
-   import { promptValidator } from ('prompt-validator');
+   import { promptValidator } from 'prompt-validator';
    const apiKey = 'your-openai-api-key';
    const prompt = 'Your prompt text goes here';
    promptValidator(apiKey, prompt)
